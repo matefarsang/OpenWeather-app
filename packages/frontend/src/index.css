@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.location {
+  font-size: 2rem;
+}
+
+.app {
+  top: 10%;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.app:before {
+  content: "";
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .city {
+  text-align: center;
+  padding: 1rem;
+}
+
+.app .language {
+  text-align: center;
+  padding: 1rem;
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+
+.container {
+  width: 85%;
+  height: 620px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.app .description {
+  position: relative;
+  right: -90%;
+  top: 20%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+  font-size: 2.5rem !important;
+}
+
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 1.5rem !important;
+  margin-bottom: 8%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.lat {
+  margin-right: 1.8rem;
+}
+
+.lon {
+  margin-right: 1.8rem;
+}
+
+.pressure {
+  margin-right: 1.8rem;
+}
+
+.humidity {
+  margin-right: 1.8rem;
+}
+
+.windSpeed {
+  margin-right: 1.8rem;
+}
+
+.windDeg {
+  margin-right: 1.8rem;
+}
+
+.clouds {
+  margin-right: 1.5rem;
+}
+
+.selectCity {
+  width: 350px;
+  color: black;
+  left: 37.5%;
+  padding-top: 1.6rem;
+  font-size: 1.25rem;
+}
+
+.selectLanguage {
+  width: 150px;
+  color: black;
+  left: 1.5%;
+  padding-top: 1.6rem;
+  font-size: 1.1rem;
+}
+
+.dataCreatedAt {
+  margin-left: 1.5rem;
+  margin-right: 1.8rem;
+}
