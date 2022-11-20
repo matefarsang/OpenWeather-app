@@ -31,10 +31,12 @@ as root, use the nvm use command for the corresponding node version
 
 cd packages/backend
 npm install
+
 Install dependencies
 
 cd packages/frontend
 npm install
+
 Install dependencies
 
 ## Start the application
