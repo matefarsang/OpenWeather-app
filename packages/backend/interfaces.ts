@@ -1,5 +1,4 @@
 export type WeatherDetails = {
-  lat: any;
   name: string;
   coord: {
     lat: number;

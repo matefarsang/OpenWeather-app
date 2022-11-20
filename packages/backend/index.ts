@@ -4,7 +4,7 @@ import app from "./app";
 import mongoose from "mongoose";
 
 const port = process.env.PORT || 3001;
-const mongoDbUrl = process.env.MONGO_URL || "mongodb://localhost:27017";
+const mongoDbUrl = process.env.MONGO_URL || "mongodb://db:27017";
 
 mongoose
   .connect(`${mongoDbUrl}`, {})
