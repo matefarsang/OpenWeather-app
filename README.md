@@ -1,6 +1,6 @@
 # OpenWeather application
 
-# logging to the file works in this branch. 
+# Logging to the file works in this branch 
 
 Weather information
 
