@@ -53,11 +53,10 @@ npm install
 
 Install dependencies
 
-npm run start
+### npm run start
 
 the application start
 
-## Start the application
 
 # Enjoy : )
 
