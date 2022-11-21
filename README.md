@@ -39,15 +39,15 @@ npm install
 
 Install dependencies
 
-### docker-compose up
+### docker-compose up   => mongoDb
 
-mongoDb
 
-another terminal => cd packages/backend
+another terminal
 
-### npm run start
+cd packages/backend
 
-server start
+### npm run start   => server start
+
 
 cd packages/frontend
 
@@ -55,9 +55,8 @@ npm install
 
 Install dependencies
 
-### npm run start
+### npm run start   => the application start
 
-the application start
 
 
 # Enjoy : )
