@@ -3,6 +3,7 @@ import { Request, Response } from "express";
 import { WeatherModel } from "../models/weather-model";
 import { WeatherDetails } from "../interfaces";
 import axios from "axios";
+import logger from "../middlewares/logger/logger";
 
 const apiKey = process.env.APIKEY || "46d4b7c5d34fa20f4e66d522546c5d5f";
 
@@ -14,6 +15,8 @@ router.get("/:city", async (req: Request, res: Response) => {
 
   const weather = await WeatherModel.findOne({ name: city, language: lang });
   if (weather) {
+    logger.info(`${req.method} - ${req.originalUrl} - ${200}`);
+
     return res.json(weather);
   }
 
@@ -34,9 +37,11 @@ router.get("/:city", async (req: Request, res: Response) => {
     weather.save();
 
     weatherData.createdAt = new Date();
+    logger.info(`${req.method} - ${req.originalUrl} - ${200}`);
     return res.json(weatherData);
   }
 
+  logger.error(`400 - Unfortunately, we could not find the requested data : (`);
   return res.status(400).json({
     message:
       lang === "hu"

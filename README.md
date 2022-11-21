@@ -11,7 +11,7 @@ We can choose from 2 languages, Hungarian & English.
 The weather information is updated every 10 minutes.
 
 The backend is written in typescript and uses express framework and Axios.
-Requests are logged by morgan.
+Requests are logged by winston.
 MongoDB is used as the database with mongoose library.
 
 The Frontend is written in ReactJs and uses Axios.
