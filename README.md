@@ -1,5 +1,7 @@
 # OpenWeather application
 
+# logging to the file works in this branch. 
+
 Weather information
 
 This app contains weather information for the following cities:
