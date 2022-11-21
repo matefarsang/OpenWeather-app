@@ -29,23 +29,35 @@ as root, use the nvm use command for the corresponding node version
 
 ## Installation
 
-cd packages/backend
-npm install
-
-Install dependencies
-
-cd packages/frontend
-npm install
-
-Install dependencies
-
 ## Start the application
 
-Go back to the project directory root
+cd packages/backend
+
+npm install
+
+Install dependencies
 
 ### docker-compose up
 
-The application start on http://localhost:4001
+mongoDb
+
+another terminal => cd packages/backend
+
+### npm run start
+
+server start
+
+cd packages/frontend
+
+npm install
+
+Install dependencies
+
+npm run start
+
+the application start
+
+## Start the application
 
 # Enjoy : )
 
