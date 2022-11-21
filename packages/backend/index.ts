@@ -10,7 +10,7 @@ const mongoDbUrl = process.env.MONGO_URL || "mongodb://db:27017";
 mongoose
   .connect(`${mongoDbUrl}`, {})
   .then(() => logger.info("MongoDB Connected"))
-  .catch((err: unknown) => console.log(err));
+  .catch((err: unknown) => logger.error(err));
 
 const server = async (): Promise<void> => {
   app.listen(port, () => {
