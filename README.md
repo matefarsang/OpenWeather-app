@@ -27,9 +27,6 @@ git clone https://github.com/matefarsang/OpenWeather-app.git
 Go to the project directory
 as root, use the nvm use command for the corresponding node version
 
-# Installation & Start of the application
-Go to the project directory as root, use the nvm use command for the corresponding node version
-
 then
 
 docker-compose up command
