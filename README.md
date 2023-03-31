@@ -27,26 +27,15 @@ git clone https://github.com/matefarsang/OpenWeather-app.git
 Go to the project directory
 as root, use the nvm use command for the corresponding node version
 
-## Installation
+# Installation & Start of the application
+Go to the project directory as root, use the nvm use command for the corresponding node version
 
-cd packages/backend
-npm install
+then
 
-Install dependencies
-
-cd packages/frontend
-npm install
-
-Install dependencies
-
-## Start the application
-
-Go back to the project directory root
-
-### docker-compose up
+docker-compose up command
+Docker will install the dependencies, connect to MongoDb and start the backend & frontend
 
 The application start on http://localhost:4001
 
-# Enjoy : )
-
+Enjoy : )
 @matefarsang
